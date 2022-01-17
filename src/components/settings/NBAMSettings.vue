@@ -16,7 +16,7 @@
           <input
             id="NBAM-Host"
             type="text"
-            v-model="softserve01.pegalabs.io"
+            v-model="settings.pega_marketing.Host"
           />
         </div>
         <div class="field-item">
