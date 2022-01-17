@@ -221,7 +221,7 @@ window.settings = {
   },
   users: [
     {
-      username: 'joe@pegasystems.com',
+      username: 'joe',
       password: 'rules',
       img: 'avatar-1.jpg',
       company_name: '',
@@ -237,6 +237,10 @@ window.settings = {
       load_by_default: true,
       otp_send_to: '',
       kpi: [
+        {
+          name: 'kpi_age',
+          value: '31',
+        },
         {
           icon: 'pi-gauge',
           name: 'kpi_wellness_score',
@@ -260,7 +264,7 @@ window.settings = {
       ],
     },
     {
-      username: 'mary@pegasystems.com',
+      username: 'mary',
       password: 'rules',
       img: 'avatar-2.jpg',
       company_name: '',
@@ -276,6 +280,10 @@ window.settings = {
       load_by_default: false,
       otp_send_to: '',
       kpi: [
+        {
+          name: 'kpi_age',
+          value: '24',
+        },
         {
           icon: 'pi-gauge',
           name: 'kpi_wellness_score',
@@ -298,6 +306,49 @@ window.settings = {
         },
       ],
     },
+    {
+      username: 'Troy',
+      password: 'rules',
+      img: 'Avatar-Troy-Murphy.jpg',
+      company_name: '',
+      name: '',
+      accountID: '',
+      contactID: '',
+      customerID: '',
+      extraparam: '',
+      dmm_context_data: '',
+      pega_userid: 'mtaylor',
+      pega_pwd: 'rules',
+      bill_pay: 164.8,
+      load_by_default: false,
+      otp_send_to: '',
+      kpi: [
+        {
+          name: 'kpi_age',
+          value: '26',
+        },
+        {
+          icon: 'pi-gauge',
+          name: 'kpi_wellness_score',
+          value: '85/100',
+        },
+        {
+          icon: 'pi-chart-donut-solid',
+          name: 'kpi_cholesterol',
+          value: '190',
+        },
+        {
+          icon: 'pi-target',
+          name: 'kpi_bmi',
+          value: '23.98',
+        },
+        {
+          icon: 'pi-heart-pulse',
+          name: 'kpi_blood_pressure',
+          value: '113/86',
+        },
+      ],
+    },
   ],
   pega_chat: {
     WCBConfigName: '',
@@ -317,30 +368,30 @@ window.settings = {
     DMMPrivateURL: 'https://ksxyk0i2hb.execute-api.us-east-1.amazonaws.com/Prod/private-data',
   },
   pega_marketing: {
-    Host: '',
+    Host: 'softserve01.pegalabs.io',
     Port: '',
     channel: 'Web',
-    requestTimeout: 10000,
+    requestTimeout: 90000,
     replaceHomePageHeader: false,
-    showAIOverlay: false,
+    showAIOverlay: true,
     enableRTS: false,
-    enableClickStream: false,
+    enableClickStream: true,
     useCaptureByChannel: true,
-    apiLevel: 'V2',
+    apiLevel: 'V3',
     contextName: 'Customer',
-    showLoadingIndicator: false,
+    showLoadingIndicator: true,
     homePage: {
-      containerName: 'TopOffers',
+      containerName: '',
       placement: 'Hero,Tile,Tile,Tile',
-      clickaction: 'Mashup',
+      clickaction: 'TopURL',
     },
     accountPage: {
-      containerName: 'TopOffers',
+      containerName: 'TestContainer',
       placement: 'Tile',
-      clickaction: 'Mashup',
+      clickaction: 'TopURL',
     },
     phonePage: {
-      containerName: 'TopOffers',
+      containerName: '',
       placement: 'Tile',
       clickaction: 'Mashup',
     },
