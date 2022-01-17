@@ -172,13 +172,13 @@ const upgradeConfig = function upgradeConfig(cfg) {
     }
   }
   if (typeof cfg.settings.pega_marketing.homePage === 'undefined') {
-    cfg.settings.pega_marketing.homePage = { containerName: 'TopOffers' };
+    cfg.settings.pega_marketing.homePage = { containerName: '' };
   }
   if (typeof cfg.settings.pega_marketing.accountPage === 'undefined') {
-    cfg.settings.pega_marketing.accountPage = { containerName: 'TopOffers' };
+    cfg.settings.pega_marketing.accountPage = { containerName: 'TestContainer' };
   }
   if (typeof cfg.settings.pega_marketing.phonePage === 'undefined') {
-    cfg.settings.pega_marketing.phonePage = { containerName: 'TopOffers' };
+    cfg.settings.pega_marketing.phonePage = { containerName: '' };
   }
   if (typeof cfg.settings.pega_marketing.offerPage === 'undefined') {
     cfg.settings.pega_marketing.offerPage = { containerName: 'TopOffers' };
@@ -198,7 +198,7 @@ const upgradeConfig = function upgradeConfig(cfg) {
     cfg.settings.pega_marketing.offerPage.placement = 'Hero,Tile,Tile,Tile';
   }
   if (typeof cfg.settings.pega_marketing.homePage.clickaction === 'undefined') {
-    cfg.settings.pega_marketing.homePage.clickaction = 'Mashup';
+    cfg.settings.pega_marketing.homePage.clickaction = 'TopURL';
   }
   if (
     typeof cfg.settings.pega_marketing.accountPage.clickaction === 'undefined'
@@ -226,28 +226,28 @@ const upgradeConfig = function upgradeConfig(cfg) {
     cfg.settings.pega_marketing.channel = 'Web';
   }
   if (typeof cfg.settings.pega_marketing.showAIOverlay === 'undefined') {
-    cfg.settings.pega_marketing.showAIOverlay = false;
+    cfg.settings.pega_marketing.showAIOverlay = true;
   }
   if (typeof cfg.settings.pega_marketing.enableRTS === 'undefined') {
     cfg.settings.pega_marketing.enableRTS = false;
   }
   if (typeof cfg.settings.pega_marketing.enableClickStream === 'undefined') {
-    cfg.settings.pega_marketing.enableClickStream = false;
+    cfg.settings.pega_marketing.enableClickStream = true;
   }
   if (typeof cfg.settings.pega_marketing.showLoadingIndicator === 'undefined') {
-    cfg.settings.pega_marketing.showLoadingIndicator = false;
+    cfg.settings.pega_marketing.showLoadingIndicator = true;
   }
   if (typeof cfg.settings.pega_marketing.useCaptureByChannel === 'undefined') {
-    cfg.settings.pega_marketing.useCaptureByChannel = false;
+    cfg.settings.pega_marketing.useCaptureByChannel = true;
   }
   if (typeof cfg.settings.pega_marketing.apiLevel === 'undefined') {
-    cfg.settings.pega_marketing.apiLevel = 'V2';
+    cfg.settings.pega_marketing.apiLevel = 'V3';
   }
   if (typeof cfg.settings.pega_marketing.contextName === 'undefined') {
     cfg.settings.pega_marketing.contextName = 'Customer';
   }
   if (typeof cfg.settings.pega_marketing.requestTimeout === 'undefined') {
-    cfg.settings.pega_marketing.requestTimeout = 10000;
+    cfg.settings.pega_marketing.requestTimeout = 90000;
   }
   for (const i in cfg.settings.quicklinks) {
     if (typeof cfg.settings.quicklinks[i].hide === 'undefined') {
@@ -686,7 +686,8 @@ if (typeof settings === 'undefined') {
     MashupURL: mainconfigTmp.settings.pega_chat.MashupURL,
     ShowAsButton: mainconfigTmp.settings.pega_chat.ShowAsButton,
     TenantID: mainconfigTmp.settings.pega_chat.TenantID,
-    MarketingHost: mainconfigTmp.settings.pega_marketing.Host,
+    // MarketingHost: mainconfigTmp.settings.pega_marketing.Host,
+    MarketingHost: 'softserve01.pegalabs.io',
     MarketingPort: mainconfigTmp.settings.pega_marketing.Port,
     EnableProActiveNotification:
       mainconfigTmp.settings.pega_chat.EnableProActiveNotification,
