@@ -1,0 +1,488 @@
+/*************************************************/
+/* Responsive behavior */
+/*************************************************/
+@media screen and (max-width: 1400px) {
+  :not(.phone)html {
+    zoom: 0.8;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Force table to not be like tables anymore */
+  table.responsive,
+  .responsive thead,
+  .responsive tbody,
+  .responsive th,
+  .responsive td,
+  .responsive tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .responsive thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .responsive tr {
+    border: 1px solid #ccc;
+  }
+
+  .responsive td {
+    border: none;
+    position: relative;
+    text-align: left;
+    padding: 3px 0 3px 60%;
+  }
+
+  .responsive td:before {
+    position: absolute;
+    left: 8px;
+    padding-right: 8px;
+    text-align: left;
+    font-weight: bold;
+    max-width: 59%;
+  }
+
+  .responsive td:before {
+    content: attr(data-title);
+  }
+
+  .responsive td.hide-collapsed {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header ul.flex li {
+    margin-right: 16px;
+    text-align: center;
+    flex: 1;
+  }
+
+  h1.hero {
+    font-size: 50px;
+  }
+
+  .front header {
+    height: 500px;
+  }
+
+  .front > main {
+    margin-top: -400px;
+  }
+
+  .front .hero-wrap {
+    height: 400px;
+  }
+
+  h2,
+  .col-2 h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  body,
+  button,
+  footer nav > div.flex li,
+  .inputfile + label {
+    font-size: 14px;
+  }
+
+  footer nav > div.flex li {
+    margin-right: 3vw;
+  }
+
+  .pi.product-icon {
+    min-width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .col-1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .col-2 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    display: flex;
+  }
+
+  .secondary-card {
+    width: 50%;
+  }
+
+  .offer-card-col {
+    margin-right: 8px;
+  }
+
+  .secondary-card.container {
+    margin-left: 8px;
+  }
+
+  footer nav > div.flex > a {
+    margin-right: 8px;
+  }
+
+  .tab-vertical-menu > .tab-interface > .container {
+    order: 2;
+  }
+
+  .tab-vertical-menu > .tab-interface > .container > .header {
+    display: flex;
+  }
+
+  .tab-vertical-menu > .tab-interface > .container > .body {
+    display: block;
+  }
+  .tab-vertical-menu > .tab-interface > .container.collapsed > .body {
+    display: none;
+  }
+
+  .tab-vertical-menu > .tab-interface {
+    margin: 0 24px;
+    position: static;
+    float: none;
+    width: auto;
+  }
+
+  .tab-vertical-menu > .tabs-details {
+    margin: 0 24px;
+  }
+
+  .tab-vertical-menu > .tab-interface > .tab-action {
+    flex-flow: row nowrap;
+    padding: 0;
+    background: none;
+    margin: 0;
+  }
+  .tab-vertical-menu > .tab-interface > .tab-action > button.simple {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  h1.hero {
+    font-size: 40px;
+  }
+
+  .front > header {
+    height: 300px;
+  }
+
+  .front > main {
+    margin-top: -200px;
+  }
+  .front .hero-wrap {
+    height: 200px;
+  }
+  .offer > header {
+    padding: 7px 14px 0;
+  }
+  .offer > header h1 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  .launch-login {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  header nav > ul.flex {
+    display: none;
+  }
+  .overlay.logout {
+    right: 100px;
+  }
+  header > .header,
+  header > .wrap.header {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .account-picker > .flex {
+    display: block;
+  }
+
+  .account-picker > .flex > div.content-card {
+    margin: 0 0 8px 0;
+  }
+
+  .flex-col-3 > div {
+    width: 100%;
+    width: 100%;
+    margin: 0 0 8px 0;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-col-3 {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .layout-inline-grid-double > div {
+    width: calc(100%);
+    margin-right: 0;
+  }
+
+  .layout-inline-grid-double > div:nth-child(2n) {
+    margin: 0;
+  }
+
+  .landing-cards > div,
+  .landing-request {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .landing-request > .landing-intro {
+    margin: 0 0 16px 0;
+  }
+
+  .landing .landing-cards {
+    margin-top: 0;
+  }
+
+  .landing-cards > div > .flex {
+    margin-bottom: 16px;
+  }
+
+  .hero-wrap img {
+    max-height: 150px;
+  }
+  .list-box > h3,
+  .list-box > p {
+    font-size: 14px;
+    margin: 0 8px 0 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .col-2 {
+    flex-flow: column;
+  }
+
+  .col-2 > .secondary-card {
+    width: auto;
+  }
+
+  .chat-button #ChatLauncherminimized > img,
+  .chat-button #servicecaselauncherminimized > img,
+  .chat-button #launcherminimized > img,
+  .chat-button #launcher > img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .layout-labels-left > .field-item {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .layout-labels-left > .field-item > label {
+    width: auto;
+    min-width: auto;
+    margin: 0 0 3px 0;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .primary-options,
+  .secondary-options .wrap {
+    flex-flow: column nowrap;
+  }
+
+  .primary-options .front-option {
+    flex-flow: row nowrap;
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+    align-items: center;
+  }
+
+  .primary-options .front-option > img {
+    width: 140px;
+  }
+
+  .primary-options .front-option > .details {
+    flex: 1;
+    text-align: left;
+    padding-left: 14px;
+  }
+
+  .offer > main,
+  .wrap {
+    margin: 0;
+  }
+
+  .category > header,
+  .offer > header,
+  .front > header {
+    margin-bottom: 0;
+    height: 300px;
+  }
+
+  .category > header,
+  .offer > header {
+    margin-bottom: 14px;
+  }
+
+  button {
+    min-width: 0;
+  }
+
+  .secondary-options .front-option::after {
+    height: 40px;
+    width: 40px;
+    background-size: 20px auto;
+    margin-left: -17px;
+  }
+
+  .secondary-options .front-option:first-child::after {
+    top: -20px;
+  }
+
+  .secondary-options .wrap {
+    margin-top: -150px;
+    padding: 0 10vw;
+    filter: drop-shadow(0 3px 7px rgba(0, 0, 0, 0.5));
+    margin-bottom: 14px;
+  }
+
+  .secondary-options .front-option {
+    background: #fff;
+    padding-top: 40px;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .fatlist > li {
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+
+  time.fatlist-item {
+    font-size: 14px;
+    min-width: 100%;
+  }
+
+  p.activity {
+    font-size: 14px;
+    font-size: 14px;
+    max-width: calc(100% - 85px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  a.fatlist-item {
+    padding-left: 0;
+  }
+
+  :not(.phone) > footer nav {
+    width: 100%;
+  }
+
+  :not(.phone) > footer nav > div > a {
+    display: none;
+  }
+  :not(.phone) > footer nav > div > a:last-child {
+    display: block;
+  }
+
+  .landing-details .image {
+    display: none;
+  }
+
+  .landing .landing-details > div > .details {
+    width: 100%;
+    padding: 21px 35px;
+  }
+
+  .offer-details > div > div:first-child {
+    padding: 0 50px 0 44px;
+    min-width: 244px;
+  }
+
+  .offer-details .image {
+    height: 150px;
+  }
+
+  .category .promo,
+  .landing .promo {
+    padding: 16px;
+  }
+
+  .offer .promo > .flex {
+    flex-flow: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .category > main {
+    margin-top: -230px;
+  }
+  .category .primary-card {
+    padding: 0;
+  }
+  .category .primary-card > .separator {
+    flex-flow: column nowrap;
+  }
+
+  .banner > div > div {
+    flex-flow: column;
+    text-align: center;
+  }
+
+  .banner i {
+    font-size: 2em;
+  }
+
+  .category .primary-card > .separator > section {
+    border-right: none;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-bottom: 1px solid #979797;
+    padding: 8px 24px;
+  }
+
+  .category .primary-card > .separator > section:first-child {
+    border-top: 1px solid #979797;
+  }
+  .category .primary-card > .separator > section > .flex {
+    padding: 0 0 0 24px;
+  }
+
+  .category-highlights > .flex {
+    flex-flow: column nowrap;
+  }
+
+  .category-highlights p {
+    margin: 8px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-overlay {
+    right: 0;
+    left: 0;
+  }
+}
