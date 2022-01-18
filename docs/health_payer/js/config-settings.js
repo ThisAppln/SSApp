@@ -63,7 +63,7 @@ window.settings = {
     },
     {
       title: {
-        en: 'Make a payfgfdgment',
+        en: 'Make a payment',
       },
       action: 'createNewWork',
       actionparam: '',
@@ -655,7 +655,7 @@ window.settings = {
     offerPage: {
       containerName: 'TopOffers',
       placement: 'Hero,Tile,Tile,Tile',
-      clickaction: 'Mashup',
+      clickaction: 'Popup',
     },
   },
 };
