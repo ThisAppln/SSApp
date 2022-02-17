@@ -1,6 +1,7 @@
 <template>
   <div :class="'flex flex-col container' + (isExpanded ? '':' collapsed') + ' ' + format ">
     <div v-on:click.stop="toggleExpand" class="header flex">
+    alert("test");
       <h3>{{ title }}</h3>
       <button class="simple" title="click to expand or collapse">
         <i :class="'pi' + (isExpanded? ' pi-caret-down': ' pi-caret-right')" />
