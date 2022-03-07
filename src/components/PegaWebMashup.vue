@@ -365,6 +365,8 @@ export default {
       });
     }
     tmpActionParam.pySkipCookieConsent = 'true';
+
+    tmpActionParam.PatientID='1';
     this.actionParam = JSON.stringify(tmpActionParam);
     this.isMashupInitialized = true;
     /* If Mashup is already initialized - just return */
