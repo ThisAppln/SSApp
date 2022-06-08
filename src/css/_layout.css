@@ -148,6 +148,11 @@ body {
   margin: 0 auto 16px auto;
 }
 
+.wrap section {
+  height: 600px;
+  border: 5px solid red;
+}
+
 footer .wrap {
   margin-bottom: 0;
   align-items: center;
