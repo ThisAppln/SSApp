@@ -286,7 +286,7 @@ export default {
    <--! if (this.app.industry === 'comms') {
       tmpActionParam.pzSkinName = 'ClaritySkin_HoneyFlower';
     } else if (this.app.industry.indexOf('health') === 0) {
-      tmpActionParam.pzSkinName = 'PAR';
+      tmpActionParam.pzSkinName = 'ClaritySkin_Keppel';
     } else if (this.app.industry === 'gov') {
       tmpActionParam.pzSkinName = 'ClaritySkin_PictonBlue';
     } else if (

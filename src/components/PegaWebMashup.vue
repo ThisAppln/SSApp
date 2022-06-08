@@ -282,22 +282,22 @@ export default {
       `${this.serverUrl}?pyActivity=pzIncludeMashupScripts&id=${this.mashupid}`,
     );
     const tmpActionParam = {};
-    tmpActionParam.pzSkinName = 'PAR';
+    tmpActionParam.pzSkinName = 'ClaritySkin';
    <--! if (this.app.industry === 'comms') {
-      tmpActionParam.pzSkinName = 'PAR';
+      tmpActionParam.pzSkinName = 'ClaritySkin_HoneyFlower';
     } else if (this.app.industry.indexOf('health') === 0) {
-      tmpActionParam.pzSkinName = 'PAR';
+      tmpActionParam.pzSkinName = 'ClaritySkin_Keppel';
     } else if (this.app.industry === 'gov') {
-      tmpActionParam.pzSkinName = 'PAR';
+      tmpActionParam.pzSkinName = 'ClaritySkin_PictonBlue';
     } else if (
       this.app.industry === 'retail_bank' ||
       this.app.industry === 'commercial_bank'
     ) {
-      tmpActionParam.pzSkinName = 'PAR';
+      tmpActionParam.pzSkinName = 'ClaritySkin_Mantis';
     } else if (this.app.industry === 'insurance') {
-      tmpActionParam.pzSkinName = 'PAR';
+      tmpActionParam.pzSkinName = 'ClaritySkin_Flame';
     } else if (this.app.industry === 'manufacturing') {
-      tmpActionParam.pzSkinName = 'PAR';
+      tmpActionParam.pzSkinName = 'ClaritySkin_DeepCerise';
     }  -->
     tmpActionParam.pyMashupSkeletonName = 'pyDefaultMashupSkeleton';
     if (this.userId !== -1) {
