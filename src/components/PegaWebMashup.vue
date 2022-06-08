@@ -283,10 +283,10 @@ export default {
     );
     const tmpActionParam = {};
     tmpActionParam.pzSkinName = 'ClaritySkin';
-    if (this.app.industry === 'comms') {
+   <--! if (this.app.industry === 'comms') {
       tmpActionParam.pzSkinName = 'ClaritySkin_HoneyFlower';
     } else if (this.app.industry.indexOf('health') === 0) {
-      tmpActionParam.pzSkinName = 'ClaritySkin_Keppel';
+      tmpActionParam.pzSkinName = 'PAR';
     } else if (this.app.industry === 'gov') {
       tmpActionParam.pzSkinName = 'ClaritySkin_PictonBlue';
     } else if (
@@ -298,7 +298,7 @@ export default {
       tmpActionParam.pzSkinName = 'ClaritySkin_Flame';
     } else if (this.app.industry === 'manufacturing') {
       tmpActionParam.pzSkinName = 'ClaritySkin_DeepCerise';
-    }
+    }  -->
     tmpActionParam.pyMashupSkeletonName = 'pyDefaultMashupSkeleton';
     if (this.userId !== -1) {
       tmpActionParam.UserIdentifier = this.settings.users[
