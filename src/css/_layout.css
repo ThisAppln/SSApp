@@ -149,8 +149,8 @@ body {
 }
 
 .wrap section {
-  height: 600px;
-  border: 5px solid red;
+  height: 600px !important;
+  border: 5px solid red !important;
 }
 
 footer .wrap {
