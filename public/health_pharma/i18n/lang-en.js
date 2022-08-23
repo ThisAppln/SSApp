@@ -157,7 +157,7 @@ window.langEN = {
   offer_highlights_data3_msg:
     'We understand that accountability is key to successfully measuring and tracking progress. Stay motivated by using our mobile diabetes tracking tool.',
   kmhelp: 'Help',
-  yourkpi: 'Health snapshot',
+  yourkpi: 'Health snapshotu',
   kpi_wellness_score: 'Wellness score',
   kpi_cholesterol: 'Cholesterol',
   kpi_bmi: 'BMI',

@@ -125,7 +125,7 @@
       :data-attr-title="caseTitle"
       :data-attr-color="settings.general.theming.override ? settings.general.theming.interactiveColor : ''"
       src="form-embed.html"
-      style="overflow: hidden; height: 1000px"
+      style="overflow: hidden; height: 600px"
       width="100%"
       height="100%"
       border="0"
