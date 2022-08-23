@@ -39,7 +39,7 @@ window.app = {
       link: 'learnmore',
     },
   ],
-  /* accountpicker: [
+ /* accountpicker: [
     {
       icon: 'pi-stethoscope',
       title: 'accountpicker1_title',

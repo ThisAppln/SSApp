@@ -218,6 +218,7 @@ window.settings = {
       bill_pay: 164.8,
       load_by_default: true,
       otp_send_to: '',
+      /*
       kpi: [
         {
           icon: 'pi-gauge',
@@ -240,6 +241,7 @@ window.settings = {
           value: '120/76',
         },
       ],
+      */
     },
     {
       username: 'mary@pegasystems.com',
